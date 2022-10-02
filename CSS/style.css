@@ -1,0 +1,72 @@
+body{
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    overflow: hidden;  /* to hide scroll bar */
+}
+
+.half1{
+    width: 50%;
+    height: 100vh;
+    background-color: #1B2430;
+    padding: 0;
+}
+
+.half2{
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.div{
+    padding: 2rem;
+    text-align: center;
+}
+
+/* .center{
+    margin-top: 22.5%;
+    margin-bottom: 22.5%;
+} */
+
+.heading{
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.block{
+    display: block;
+}
+
+input[type = 'number']{
+    height: 2rem;
+    background-color: #000000;
+    border-width: 0;
+    margin: 1rem auto;
+    color: aliceblue;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+.button{
+    height: 2rem;
+    background-color: #150050;
+    color: aliceblue;
+    margin: 1.5rem auto;
+    width: 45%;
+    border-width: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.declaration{
+    margin-left: 10%;
+    margin-right: 10%;
+}

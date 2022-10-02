@@ -10,7 +10,7 @@ function calculateProfitAndLoss() {
     let sellingPrice = (currPrice.value) * number;
     if (number == '' || costPrice == '' || sellingPrice == '') {
         declaration.innerText = 'Fill the required fields'
-        declaration.style.color = 'black';
+        declaration.style.color = 'white';
     } 
     else {
         if (costPrice < sellingPrice) {
@@ -20,7 +20,7 @@ function calculateProfitAndLoss() {
             declaration.style.color = 'Green';
         } else if (costPrice === sellingPrice) {
             declaration.innerText = 'No pain No gain, and no gain no pain :)';
-            declaration.style.color = 'black';
+            declaration.style.color = 'white';
         } else if (sellingPrice < costPrice) {
             let loss = costPrice - sellingPrice;
             let lossPercentage = (loss / costPrice) * 100;
@@ -33,3 +33,14 @@ function calculateProfitAndLoss() {
 btn.addEventListener('click', function () {
     calculateProfitAndLoss();
 })
+
+let bodyHeight = document.querySelector('body').offsetHeight;
+let centerHeight = document.querySelector('.center').offsetHeight;
+let height1 =  (bodyHeight - centerHeight)/2;
+
+let declaredHeight = declaration.offsetHeight;
+let height2 =  (bodyHeight - declaredHeight)/2;
+
+document.querySelector('.center').style.marginTop = height1 + 'px';
+document.querySelector('.center').style.marginBottom = height1 + 'px';
+declaration.style.marginTop = height2 + 'px';

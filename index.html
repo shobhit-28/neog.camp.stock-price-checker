@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mock stock</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    <div class="half1">
-        <h1 class="heading">
-            Where's my Stonks?
-        </h1>
-        <input type="number" name="initial" id="initial" class="initPrice" />
-        <input type="number" name="quantity" id="quantity" class="numberOfStocks" />
-        <input type="number" name="current" id="current" class="currPrice" />
-        <button class="button">
-            Tell Me!
-        </button>
+    <div class="half1 div">
+        <div class="center">
+            <h1 class="heading">
+                Where's my Stonks?
+            </h1>
+            <input type="number" name="initial" id="initial" class="initPrice block" placeholder="Enter initial price here"/>
+            <input type="number" name="quantity" id="quantity" class="numberOfStocks block" placeholder="Enter number of stocks"/>
+            <input type="number" name="current" id="current" class="currPrice block" placeholder="Enter current price"/>
+            <button class="button block">
+                Tell Me!
+            </button>
+        </div>
     </div>
-    <div class="half2">
-        <h1 class="declaration">
-            declared
-        </h1>
+    <div class="half2 div">
+        <h1 class="declaration"></h1>
     </div>
 
     <script src="JS/brain.js"></script>
 </body>
+
 </html>
